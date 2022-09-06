@@ -1,0 +1,12 @@
+
+-- Ejecutar en modo fork: npm start 
+
+-- Ejecutar en modo cluster: npm start -- -m cluster
+
+PM2 modo fork 
+
+> pm2 start server.js  --name="serverFork" --watch
+
+-- modo cluster. Con 4 cpus de las disponibles
+
+> pm2 start server.js --name="serverCluster" --watch -i max
